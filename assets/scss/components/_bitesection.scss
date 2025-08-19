@@ -1,0 +1,76 @@
+
+#bitesection {
+    background: $footercolor;
+    .wrapper{
+      max-width:800px !important;
+        .header-section {
+         text-align: center;
+                .align-section{
+                  display: flex;
+                  justify-content: space-around; 
+                    .first-section{
+                       text-align: left;
+                       position: relative;
+                        &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: -20px; /* Adjust this value to control the distance of the line from the container */
+                        width: 2px; /* Adjust this value to control the thickness of the line */
+                        background-color: #000; /* Adjust this value to change the color of the line */
+                        display: none;
+                        }
+                       
+                          .location{
+                           font-size: 30px;
+                           margin-bottom: 20px;
+                           }  
+                          .text-title {
+                            font-size: clamp(20px, 5vw, 60px);
+                             margin-bottom: 20px;
+                          }
+
+                     }  
+
+                }
+            
+        }
+      
+    }
+}
+
+
+
+
+#bitesection .wrapper .header-section .first-section:not(:nth-child(2))::after {
+
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: -88px; /* Adjust this value to control the distance of the line from the container */
+  width: 2px; /* Adjust this value to control the thickness of the line */
+  background-color: #000; /* Adjust this value to change the color of the line */
+}
+
+
+#bitesection {
+  .text-title {
+    font-size: clamp(20px, 5vw, 60px);
+     margin-bottom: 20px;
+  }
+  p{
+    line-height: 2.33;
+    font-size: 17px;
+  }
+}
+
+
+@media only screen and (max-width: 590px) {
+
+      #bitesection .wrapper .header-section .first-section:not(:nth-child(2))::after {
+         display: none;
+      }
+}

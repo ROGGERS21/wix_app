@@ -1,0 +1,154 @@
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px;
+    height: 350px;
+    
+        .card{
+            background: url(https://images.pexels.com/photos/11474214/pexels-photo-11474214.jpeg?auto=compress&cs=tinysrgb&w=600);
+            position: relative;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .card:nth-child(2){
+             background: url(https://images.pexels.com/photos/13870879/pexels-photo-13870879.jpeg?auto=compress&cs=tinysrgb&w=600);
+            position: relative;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+             background-position: center;
+
+
+        }
+        .card:nth-child(3){ 
+           background: url(https://images.pexels.com/photos/20004821/pexels-photo-20004821/free-photo-of-cream-of-beetroot-soup.jpeg?auto=compress&cs=tinysrgb&w=600);
+           position: relative;
+           height: 350px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-size: cover;
+            background-position: center;
+
+
+        }
+        .card:nth-child(4){
+                background: url(https://images.pexels.com/photos/19851795/pexels-photo-19851795/free-photo-of-kahve-temali-gorsel.jpeg?auto=compress&cs=tinysrgb&w=600);
+                position: relative;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                  background-position: center;
+
+
+
+        }
+        .card:nth-child(5){
+             background: url(https://images.pexels.com/photos/9463154/pexels-photo-9463154.jpeg?auto=compress&cs=tinysrgb&w=600);
+             position: relative;
+             height: 350px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-size: cover;
+             background-position: center;
+
+
+        }
+}
+@media only screen and (max-width: 1000px) {
+
+    #cards {
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-template-columns: repeat(auto-fit, 20rem);
+        justify-content: center;
+        height: auto;
+    }
+    #menuarea .col.left {
+        padding: 60px 20px;
+    }
+
+}
+@media only screen and (max-width: 930px) {
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+@media only screen and (max-width: 870px) {
+
+   
+    #menuarea .col.left {
+        padding: 30px 20px;
+    }
+    .button {
+        width: 110px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    #menuarea .col.right:nth-child(4) {
+        padding: 30px 20px;
+
+    }
+    #menuarea .col.right {
+        position: relative;
+        background-size: cover;
+    }
+    
+}
+@media only screen and (max-width: 780px) {
+
+    #mainsection .button-container__button {
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+    }
+    .about-section {
+        gap:0em;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .button {
+        font-size: 15px;
+        width: 100px;
+    }
+  
+    #bitesection .wrapper .header-section .align-section .first-section {
+        text-align: center;
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+
+

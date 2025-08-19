@@ -1,0 +1,133 @@
+#mainsection {
+    background-image: url(https://images.pexels.com/photos/3763426/pexels-photo-3763426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 0px !important;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    .text-area {
+        width:50%;
+        text-align: left;
+        padding: 0px 10px;
+    }
+    .mytext {
+        font-size: 1.8em;
+    }
+    .text-header {
+        font-size: clamp(20px, 5vw, 60px);
+        margin-bottom: 20px;
+    }
+    .text-title{
+        font-size: clamp(8px, 5vw, 25px);
+        margin-bottom: 20px;
+
+      }
+    .button-container {
+          display: flex;
+           flex-wrap: wrap;
+           border-radius: 3px;
+           justify-content: space-between;   
+           max-width: 460px;    
+        
+        &__button {
+            width: 200px;
+            border: 2px solid $border-color;
+            color: $border-color;
+            text-align: center;
+            font-size: 22px;
+            padding: 15px;
+              &:hover{
+                background-color: $tertially-color;
+              }
+        }
+        a{
+            text-decoration: none;        
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #mainsection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .text-area {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .mytext {
+        font-size: 1.5em;
+    }
+
+    .text-header {
+        font-size: clamp(18px, 4vw, 50px);
+    }
+
+    .text-title {
+        font-size: clamp(10px, 4vw, 20px);
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-container__button {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+    #mainsection {
+        margin-top: 0px !important;
+    }
+    header {
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    #mainsection {
+     margin-top: 0px !important;
+    }
+    .button {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 380px) {
+    #mainsection {
+        // margin-top: 76px;
+        // background-size: contain;
+        padding: 6px 6px;
+    }
+    #mainsection .mytext {
+        font-size: 1em;
+    }
+    #mainsection .button-container__button {
+        width: 150px !important;
+    }
+    #mainsection .text-area {
+        width: 76%;
+    }
+
+}

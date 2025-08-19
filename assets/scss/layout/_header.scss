@@ -1,0 +1,145 @@
+header{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    .navigation-section {
+        display: flex;
+        justify-content: space-between;        
+        display: none;
+        .website-logo{
+            display: block;
+            width: 140px; 
+            display: none;            
+            }  
+
+            nav{
+               display: inline-block;
+               line-height: 70px;
+               display: none;
+                 li{
+                    list-style: none;
+                    font-size: 20px;
+                     text-transform: capitalize;
+                     display: inline-block;
+                     margin: 0 50px;
+                     display: none;
+                    a.login{
+                        content: "\e900";
+                        position: absolute;
+                        left:0;
+                        display: none;
+                    }
+                }
+
+            }
+        }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    li{
+        display: block;
+        margin: 0 10px;
+        display: none;
+    }
+}
+  
+header .navigation-section section .dropdown-content li {
+    display: block;
+    margin: 0 10px;
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+ 
+     header .navigation-section .website-logo {
+        width: 115px;
+        display: none;
+    }    
+} 
+    
+
+@media only screen and (max-width: 1100px) {
+    footer, header {
+        padding: 20px;
+        display: none;
+    }
+    .content-wrapper {
+        padding: 30px 0px;
+        display: none;
+    } 
+    header .navigation-section nav li {
+        margin: 0 20px;
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+  
+    header .navigation-section nav { 
+        display: none;
+    }   
+    
+}
+
+@media only screen and (max-width: 890px) {
+   header {
+    padding: 20px;
+    display: none;
+   }
+   .container {
+    height: auto;
+    display: none;
+   }
+
+}
+@media only screen and (max-width: 690px) {
+    
+    .navigation-section .navbar-toggler {
+        display: grid !important;
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 590px) {
+
+     header {
+       padding: 15px;
+       display: none;
+    }
+    header .navigation-section .website-logo {
+        width: 110px;
+        display: none;
+    }
+}
+@media only screen and (max-width: 490px) {
+
+    header .navigation-section .website-logo {
+        width: 87px;
+        display: none;
+    }
+    header {
+        padding: 5px;
+        position: relative;
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+
+    .container {
+        width: 100%;
+        display: none;
+        margin: 0 auto; /* Center the content */
+      }   
+
+}

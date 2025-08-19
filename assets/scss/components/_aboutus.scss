@@ -1,0 +1,258 @@
+
+
+.about-section{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap:4em;
+    .social-media {
+        display: flex;
+        flex-direction: column;
+            h3{
+                font-size: clamp(1.5rem, 2.5vw, 2.9rem);
+                margin-bottom:20px;
+            }
+            p{
+                font-size: 18px;
+            }
+    }
+    .mail{
+        display: flex;
+        flex-direction: column;
+        h3{
+             font-size: 25px;
+             margin-bottom:20px;
+
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        h3{
+             font-size: 25px;
+             margin-bottom:20px;
+
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+.split-button {
+    position: relative;
+    padding: 10px 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid green;
+    text-align: right;
+    width: 100%;
+}
+  
+.split-button::before,
+.split-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #ffffff;
+}
+  
+.split-button::before {
+    left: 0;
+}
+  
+.split-button::after {
+    right: 0;
+    background: red;    
+} 
+.split-button::after span{
+    text-align: center;
+}
+
+
+/*spliting button*/
+
+body{
+    background: black;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+        border-radius: 30px;
+    background: white;
+
+}
+
+.toggle-btn{
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+}
+
+#btn{
+    left:0;
+    top:0;
+    position:absolute;
+    width:110px;
+    height: 100%;
+    border-radius: 30px;
+    background: red;
+
+}
+
+.forms {
+     display: flex;
+    //  justify-content: center;
+      margin-top: 20px;
+
+    .main-button{    
+    position: relative;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    width: 394px;
+
+        .sub-button {
+             background-color: transparent;
+             border: none;
+             color: #ffffff;
+             padding: 5px 10px;
+             margin: 0 5px;
+             cursor: pointer;
+             width: 100px;
+
+            .login {
+                border-right: 1px solid #ffffff;
+                width: 100px;
+            }
+              
+            .email {
+                border-left: 1px solid #ffffff;
+                width: 294px;
+                
+            }
+        }
+    }
+
+}
+#main{
+    width: 294px;
+}
+.email-form {
+    display: flex;
+    align-items: center;
+}
+  
+.email-form input[type="email"] {
+    flex: 1;
+    padding: 5px;
+    margin-right: 5px;
+    width: 274px;
+}
+
+@media (max-width: 780px) {
+       
+    
+    .forms {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .forms .main-button {
+        width: 100%;
+    }
+
+    .forms .main-button .sub-button {
+        width: auto;
+        margin: 5px 0;
+    }
+
+    .email-form {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-section {
+       gap:3.2em;
+    } 
+}
+@media (max-width: 750px) {
+
+    .about-section {
+        grid-template-columns: repeat(2, 1fr);}
+}
+
+
+@media (max-width: 690px) {
+    .about-section {
+        // grid-template-columns: 1fr;
+        gap: 0em;
+    }
+
+    .forms .main-button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .forms .main-button .sub-button,
+    .email-form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .split-button {
+        font-size: 14px;
+    }
+
+    .button-box {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .toggle-btn {
+        padding: 10px 20px;
+    }
+
+    .email-form input[type="email"] {
+        width: 100%;
+    }
+}
+@media (max-width: 490px) {
+
+    .about-section {
+        grid-template-columns: 1fr;
+        // gap: 0em;
+    }
+}
+
+
+
+
